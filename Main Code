@@ -1,0 +1,8 @@
+function response(room, msg, sender, isGroupChat, replier, imageDB, packageName) {
+  if (sender == "김건우" && msg.startsWith("eval "))
+  try {
+  replier.reply(eval(msg.substr(5)));
+  } catch (e) {
+    replier.reply(e);
+  }
+}
