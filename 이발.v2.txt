@@ -1,0 +1,11 @@
+function response(room, msg, sender, isGroupChat, replier, imageDB, packageName) {
+  if ((room == "가족방" || sender == "ᴳᵉᵒⁿʷᵒᵒ ᴷⁱᵐ" || sender == " LEG건우" || sender == "건우입니다") && msg.startsWith(".eval "))
+  try {
+    var a = msg.substr(6);
+    //replier.reply(a);
+  replier.reply(eval(a));
+  } catch (e) {
+    replier.reply(e);
+  }
+  if (msg.startsWith(".따라하기 ")) {
+    repli
